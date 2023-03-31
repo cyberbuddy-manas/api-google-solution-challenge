@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MindReads | Book Recommeding Therapist</title>
-</head>
+  </head>
 
-<body>
-    <form onsubmit="sendRequest()" id="reqForm" method = 'POST'>
-        <input type="text" name="request" id="req" />
-        <input type="submit" value="Submit" id="">
+  <body>
+    <form id="reqForm" method="POST">
+      <input type="text" name="request" id="req" />
+      <input type="submit" value="Submit" id="btn-submit" />
     </form>
 
     <!-- Latest version of jQuery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-        function sendRequest() {
-            var form_data = new FormData("reqForm");
-            $.ajax({
-                type: 'POST',
-                url: '/predict',
-                data: $('#req').val(),
-                async: true,
-                success: function (data) {
-                    console.log('Result: ' + data);
-                },
-            });
-        }
-    </script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/main.js') }}"
+    ></script>
+  </body>
 </html>
