@@ -87,10 +87,10 @@ function callBook(data) {
       }
     } else {
       // doc.data() will be undefined in this case
-      alert("Internal Server Error 1");
+      callBook("anxious")
     }
   }).catch((error) => {
-    console.log("Internal Server Error", error);
+    callBook("Emotional distress")
   });
 }
 
