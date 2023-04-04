@@ -1,7 +1,4 @@
 function renderBook(imageSrc, title, description, author) {
-
-  document.getElementById('books-main').style.display = 'unset';
-
   // Create a parent element
   const parentDiv = document.createElement("div");
   parentDiv.classList.add("max-w-sm", "bg-white", "border", "border-gray-200", "rounded-lg", "shadow",
@@ -69,6 +66,10 @@ function renderBook(imageSrc, title, description, author) {
 }
 
 function callBook(data) {
+  document.getElementById('books').innerHTML = null;
+  document.getElementById('books-main').style.display = 'unset';
+  document.getElementById("books-main").scrollIntoView();
+
   var db = firebase.firestore();
   const docRef = db.collection('tag').doc(data);
 
