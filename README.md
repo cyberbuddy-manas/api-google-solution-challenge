@@ -45,8 +45,5 @@ MindReads aims to contribute towards improved mental health outcomes for individ
 
 - [@Ishnoor kaur](https://github.com/Ishnoor-kaur) [Project Manager] - overseeing all the documentation part and video scripting
 - [@Manas Gupta](https://github.com/cyberbuddy-manas) [Front end developer] - overseeing user interface and experience and used Angular to build the website
-- [@Sayam Sharma](https://github.com/StartCodeingWithSayam) [Back end developer] - overseeing deep learning and backend of the project.
+- [@Sayam Sharma](https://github.com/WizCoderr) [Back end developer] - overseeing deep learning and backend of the project.
 
-## 🍕 Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
